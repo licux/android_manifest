@@ -13,11 +13,11 @@
 
 
     <!-- x86emu -->
-    <project name="android_device_generic_x86emu" path="device/generic/x86emu" remote="github" revision="master"/>
+    <project name="android_device_generic_x86emu" path="device/generic/x86emu" remote="github" revision="refs/tags/v1.2"/>
     <project name="android_kernel" path="kernel" remote="github" revision="master"/>
-    <project name="android_device_generic_goldfish" path="device/generic/goldfish" remote="github" revision="master"/>
-    <project name="android_device_generic_common" path="device/generic/common" remote="github" revision="master"/>
-    <project name="android_build_make" path="build/make" remote="github" revision="master"/>
-    <project name="android_vendor_myapp" path="vendor/myapp" remote="github" revision="master"/>
+    <project name="android_device_generic_goldfish" path="device/generic/goldfish" remote="github" revision="refs/tags/v1.2"/>
+    <project name="android_device_generic_common" path="device/generic/common" remote="github" revision="refs/tags/v1.2"/>
+    <project name="android_build_make" path="build/make" remote="github" revision="refs/tags/v1.2"/>
+    <project name="android_vendor_myapp" path="vendor/myapp" remote="github" revision="refs/tags/v1.2"/>
 
 </manifest>
