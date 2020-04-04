@@ -26,6 +26,7 @@
         <linkfile src="tools" dest="build/tools" />
     </project>
     <project name="android_vendor_myapp" path="vendor/myapp" remote="github" revision="master"/>
+    <project name="android_vendor_mynative" path="vendor/mynative" remote="github" revision="master"/>
     <project name="android_bootable_newinstaller" path="bootable/newinstaller" remote="github" revision="master"/>
     <project name="android_system_core" path="system/core" remote="github" revision="master"/>
     <project name="android_external_efibootmgr" path="external/efibootmgr" remote="github" revision="master"/>
@@ -35,6 +36,7 @@
     <project name="android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="master"/>
     <project name="android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="master"/>
     <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="master"/>
+    <project name="android_prebuilts_ndk" path="prebuilts/ndk" remote="github" revision="master"/>
     <project name="android_myscript" path="myscript" remote="github" revision="master"/>
 
     <!-- aosp -->
@@ -570,7 +572,6 @@
     <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
     <project path="prebuilts/maven_repo/bumptech" name="platform/prebuilts/maven_repo/bumptech" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
     <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" clone-depth="1" />
-    <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" />
     <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
     <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
     <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
