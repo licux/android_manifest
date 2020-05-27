@@ -25,10 +25,17 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
+   <project name="android_build_soong" path="build/soong" remote="github" revision="master">
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
     <project name="android_vendor_myapp" path="vendor/myapp" remote="github" revision="master"/>
     <project name="android_vendor_mynative" path="vendor/mynative" remote="github" revision="master"/>
+    <project name="android_vendor_interfaces" path="vendor/interfaces" remote="github" revision="master"/>
+    <project name="android_vendor_mycamera" path="vendor/mycamera" remote="github" revision="master"/>
     <project name="android_bootable_newinstaller" path="bootable/newinstaller" remote="github" revision="master"/>
     <project name="android_system_core" path="system/core" remote="github" revision="master"/>
+    <project name="android_system_sepolicy" path="system/sepolicy" remote="github" revision="master"/>
     <project name="android_external_efibootmgr" path="external/efibootmgr" remote="github" revision="master"/>
     <project name="android_external_efivar" path="external/efivar" remote="github" revision="master"/>
     <project name="android_frameworks_base" path="frameworks/base" remote="github" revision="master"/>
@@ -42,10 +49,6 @@
     <!-- aosp -->
     <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
     <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
-    <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
-        <linkfile src="root.bp" dest="Android.bp" />
-        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-    </project>
     <project path="art" name="platform/art" groups="pdk" />
     <project path="bionic" name="platform/bionic" groups="pdk" />
     <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -598,7 +601,6 @@
     <project path="system/nfc" name="platform/system/nfc" groups="pdk" />
     <project path="system/nvram" name="platform/system/nvram" groups="pdk" />
     <project path="system/security" name="platform/system/security" groups="pdk" />
-    <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
     <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk" />
     <project path="system/timezone" name="platform/system/timezone" groups="pdk" />
     <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />
